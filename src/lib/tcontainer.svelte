@@ -48,6 +48,7 @@
 
     h2 {
         font-size: clamp(10px, 2vw, 18px);
+        font-family: monospace;
         margin: 0;
     }
 

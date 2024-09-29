@@ -41,7 +41,7 @@
         margin: 0;
         padding: 5px;
         text-align: center;
-        border-left: 0.1px solid rgb(148, 148, 148);
+        border-left: 1px solid rgb(148, 148, 148);
         border-bottom: 3px solid black;
         transition: all 0.5s ease;
     }
