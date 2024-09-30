@@ -1,11 +1,17 @@
+<script>
+    import Time from "./status_bar/time.svelte";
+</script>
+
 <div class="status-bar">
     <div id="workspace" class="bar-component">
-        <p class="work-entry active">Home </p>
-        <p class="work-entry">About </p>
+        <p class="work-entry active"><a href="#home">Home</a> </p>
+        <p class="work-entry"><a href="#about">About</a> </p>
         <p class="work-entry">Contact </p>
     </div>
     <div id="current-workspace" class="bar-component ">(WORKSPACE)</div>
-    <div id="misc" class="bar-component ">TI:ME W*C STATUS</div>
+    <div id="misc" class="bar-component ">
+        <Time></Time>
+    </div>
 </div>
 
 <style>
@@ -13,13 +19,17 @@
         border: 1px solid purple;
         min-height: 50px;
         height: 5vh;
-        padding: 5px;
+        width: 98.75vw;
+        z-index: 2;
+        padding: 0.75vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-right: 10px;
         padding-left: 10px;
         font-size: clamp(15px, 2vw, 24px);
+        white-space: pre;
+        position: fixed;
     }
 
     .bar-component {
@@ -30,10 +40,15 @@
         align-items: center;
         height: fit-content;
         width: fit-content;
+        border: 1px solid white;
     }
 
     #workspace {
         padding: 0;
+    }
+
+    #misc {
+        white-space: pre;
     }
 
     .work-entry {
@@ -53,6 +68,7 @@
     .active {
         color: black;
         background: white;
+        border-bottom: 3px solid white;
     }
 
     

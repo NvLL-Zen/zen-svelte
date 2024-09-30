@@ -1,38 +1,40 @@
-<div class="main-container">
-    <div class="ascii-wrapper">
+<div id={id} class="main-container">
+    <!-- <div class="ascii-wrapper">
     <h2>██     ██ ███████ ██      ██████   ██████  ███    ███ ███████</h2>
     <h2>██     ██ ██      ██      ██      ██    ██ ████  ████ ██     </h2>
     <h2>██  █  ██ █████   ██      ██      ██    ██ ██ ████ ██ █████  </h2>
     <h2>██ ███ ██ ██      ██      ██      ██    ██ ██  ██  ██ ██     </h2>
     <h2>███   ███ ███████ ███████ ██████  ████████ ██      ██ ███████</h2>
-    </div>
-    <!-- <div class="ascii-wrapper">
-        <h2>.__       __            __                                             </h2>        
-        <h2>/  |  _  /  |          /  |                                            </h2>
-        <h2>$$ | / \ $$ |  ______  $$ |  _______   ______   _____  ____    ______  </h2>
-        <h2>$$ |/$  \$$ | /      \ $$ | /       | /      \ /     \/    \  /      \ </h2>
-        <h2>$$ /$$$  $$ |/$$$$$$  |$$ |/$$$$$$$/ /$$$$$$  |$$$$$$ $$$$  |/$$$$$$  |</h2>
-        <h2>$$ $$/$$ $$ |$$    $$ |$$ |$$ |      $$ |  $$ |$$ | $$ | $$ |$$    $$ |</h2>
-        <h2>$$$$/  $$$$ |$$$$$$$$/ $$ |$$ \_____ $$ \__$$ |$$ | $$ | $$ |$$$$$$$$/ </h2>
-        <h2>$$$/    $$$ |$$       |$$ |$$       |$$    $$/ $$ | $$ | $$ |$$       |</h2>
-        <h2>$$/      $$/  $$$$$$$/ $$/  $$$$$$$/  $$$$$$/  $$/  $$/  $$/  $$$$$$$/ </h2>      
     </div> -->
+    <div class="ascii-wrapper">
+    <h2>██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗</h2>
+    <h2>██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝</h2>
+    <h2>██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  </h2>
+    <h2>██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  </h2>
+    <h2>╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗</h2>
+    <h2>.╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝</h2>
+    </div>
 
     <div class="subheading">
         <h1>Hi! i'm Fauzan Rizky Naufal</h1>
         <h3>A.K.A [nvll-zen] [Victor Zenriel]</h3>
+        <h3>for navigation: click the nav on the top-left or the arrows </h3>
     </div>
 </div>
+
+<script>
+    export let id;
+</script>
 
 <style>
     .main-container {
         color: white;
-        background: black;
-        opacity: 0.7;
+        background: rgb(0, 0, 0);
+        opacity: 0.8;
         display: flex;
         flex-direction: column;
         width: 90vw;
-        height: 90vh;
+        height: 85vh;
         align-items: center;
         justify-content: center;
 
@@ -64,6 +66,6 @@
     }
 
     h3 {
-        font-size: clamp(14px, 2vw, 22px);
+        font-size: clamp(12px, 2vw, 22px);
     }
 </style>
