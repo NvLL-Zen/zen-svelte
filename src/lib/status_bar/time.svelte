@@ -11,9 +11,6 @@
     currentTime.minute = now.getMinutes();
   };
 
-  const now = new Date()
-  console.log(now.getHours())
-
   // Update the time every second
   const interval = setInterval(updateTime, 5000);
   
@@ -23,9 +20,9 @@
 
 
     <h1>{currentTime.hour}:{currentTime.minute < 10 ? '0' + currentTime.minute : currentTime.minute}&#160;</h1>
-    {#if currentTime.hour >= 21 | currentTime <= 5}<h1 class="sleep">STATUS: SLEEP</h1>{/if}
-    {#if currentTime.hour >= 19}<h1 class="free">STATUS: FREE</h1>{/if}
-    {#if currentTime.hour < 19}<h1 class="busy">STATUS: BUSY</h1>{/if}
+    {#if currentTime.hour >= 21 | currentTime.hour <= 5}<h1 class="sleep">STATUS: SLEEP</h1>{/if}
+    {#if currentTime.hour >= 19 & currentTime.hour < 21}<h1 class="free">STATUS: FREE</h1>{/if}
+    {#if currentTime.hour > 5 & currentTime.hour < 19}<h1 class="busy">STATUS: BUSY</h1>{/if}
 
 <style>
     * {

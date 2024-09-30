@@ -3,10 +3,14 @@
     <div class="horizontal-scroll">
         <div class="page-container">
             <div id="home" class="spacer-container"></div>
-            <Tcontainer class="tcontainer"></Tcontainer>
+            <Tcontainer class="tcontainer">
+                <Hometerm></Hometerm>
+            </Tcontainer>
             <div class="spacer-container"></div>
             <div class="spacer-container"></div>
-            <Tcontainer class="tcontainer"></Tcontainer>
+            <Tcontainer class="tcontainer">
+                <Aboutterm></Aboutterm>
+            </Tcontainer>
             <div id="about" class="spacer-container"></div>
         </div>
 </div>
@@ -15,6 +19,8 @@
 </div>
 
 <script>
+    import Aboutterm from "../lib/terminals/aboutterm.svelte";
+    import Hometerm from "../lib/terminals/hometerm.svelte";
     import Statusbar from "../lib/statusbar.svelte";
     import Tcontainer from "../lib/tcontainer.svelte";
 </script>
@@ -27,10 +33,10 @@
     }
 
     .horizontal-scroll {
-        margin-top: calc(5vh + 1.5vw + 5px);
+        margin-top: calc(5vh + 25px);
         width: max-content;
         height: fit-content;
-        overflow-x: scroll;
+        overflow-x: hidden;
         overflow-y: hidden;
     }
 
@@ -55,6 +61,7 @@
         background-attachment: fixed;
         width: 200vw;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     
