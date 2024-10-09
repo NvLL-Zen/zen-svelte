@@ -24,7 +24,7 @@
         height: 85vh;
         align-items: center;
         justify-content: center;
-
+        margin-top: 10px;
         align-self: center;
     }
 </style>
